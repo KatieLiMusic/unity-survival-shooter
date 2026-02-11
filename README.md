@@ -1,6 +1,6 @@
 # Survival Shooter — FMOD Audio Integration Project
 
-A 3D survival shooter game (based on Unity's official tutorial) with **all audio removed**. Your task is to implement a complete audio design using FMOD.
+A 3D survival shooter game (based on Unity's official tutorial) with **all audio removed**.
 
 The game features a player fighting waves of enemies (ZomBear, ZomBunny, Hellephant) with raycast-based shooting, health management, and scoring. Everything works — it's just silent.
 
@@ -8,7 +8,6 @@ The game features a player fighting waves of enemies (ZomBear, ZomBunny, Helleph
 
 - **GitHub Desktop** ([desktop.github.com](https://desktop.github.com/))
 - **Unity 6** version **6000.3.7f1** (must match exactly)
-- **FMOD for Unity** plugin (install after forking)
 
 ## Getting Started
 
@@ -68,15 +67,4 @@ All Unity audio has been stripped from this project:
 - AudioMixer and AudioMixerSnapshot configurations
 - Audio-specific scripts (MixLevels, VolumeHandler)
 - The BackgroundMusic GameObject from the scene
-
-The AudioListener on the Main Camera has been kept — it won't conflict with FMOD's StudioListener.
-
-## Gameplay Events to Design Audio For
-
-- Player shooting (gunfire)
-- Player taking damage (hurt)
-- Player death
-- Enemy taking damage (per enemy type: ZomBear, ZomBunny, Hellephant)
-- Enemy death (per enemy type)
-- Background music / ambience
-- UI interactions (pause, game over)
+- AudioListener on the Main Camera
