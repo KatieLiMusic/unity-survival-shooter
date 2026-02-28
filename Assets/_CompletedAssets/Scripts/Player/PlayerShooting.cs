@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnitySampleAssets.CrossPlatformInput;
+using FMODUnity;
 
 namespace CompleteProject
 {
@@ -19,7 +20,10 @@ namespace CompleteProject
         Light gunLight;                                 // Reference to the light component.
 		public Light faceLight;								// Duh
         float effectsDisplayTime = 0.2f;                // The proportion of the timeBetweenBullets that the effects will display for.
-
+        
+        // FMOD Event Reference for the gunshot sound effect.
+        [SerializeField]
+        private EventReference playerGunshot;
 
         void Awake ()
         {
@@ -115,6 +119,9 @@ namespace CompleteProject
                 // ... set the second position of the line renderer to the fullest extent of the gun's range.
                 gunLine.SetPosition (1, shootRay.origin + shootRay.direction * range);
             }
+
+            // Play the gun shot sound effect.
+            RuntimeManager.PlayOneShot(playerGunshot);
         }
     }
 }

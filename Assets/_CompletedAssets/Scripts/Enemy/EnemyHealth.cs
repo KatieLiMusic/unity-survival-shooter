@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using FMODUnity;
 
 namespace CompleteProject
 {
@@ -16,6 +17,9 @@ namespace CompleteProject
         bool isDead;                                // Whether the enemy is dead.
         bool isSinking;                             // Whether the enemy has started sinking through the floor.
 
+        // FMOD Event Stuff
+        [SerializeField]
+        private EventReference enemyHurtEvent;
 
         void Awake ()
         {
@@ -62,7 +66,10 @@ namespace CompleteProject
                 // ... the enemy is dead.
                 Death ();
             }
-        }
+
+            // Play the enemy hit sound effect.
+            RuntimeManager.PlayOneShot(enemyHurtEvent);
+        }   
 
 
         void Death ()

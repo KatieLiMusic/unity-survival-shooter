@@ -3193,6 +3193,26 @@ PrefabInstance:
       propertyPath: m_BounceIntensity
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4e5a0d387dc27394b81600988ad0216f, type: 3}
+      propertyPath: playerGunshot.Path
+      value: event:/Player/GunShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4e5a0d387dc27394b81600988ad0216f, type: 3}
+      propertyPath: playerGunshot.Guid.Data1
+      value: 1015192515
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4e5a0d387dc27394b81600988ad0216f, type: 3}
+      propertyPath: playerGunshot.Guid.Data2
+      value: 1242088048
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4e5a0d387dc27394b81600988ad0216f, type: 3}
+      propertyPath: playerGunshot.Guid.Data3
+      value: -1487990894
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4e5a0d387dc27394b81600988ad0216f, type: 3}
+      propertyPath: playerGunshot.Guid.Data4
+      value: 2034890505
+      objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 4e5a0d387dc27394b81600988ad0216f, type: 3}
       propertyPath: damageImage
       value: 
